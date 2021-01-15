@@ -26,9 +26,8 @@ df
 
 # In[3]:
 
-
-players = ["DORk", "DORT", "O", "J", "A"]
-# players = ["D", "A"]
+# Einzigartige Elemente in Spalte finden und in for-Loop durchgehen
+players = df['Name'].unique()
 
 # In[15]:
 
