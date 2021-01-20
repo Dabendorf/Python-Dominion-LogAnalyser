@@ -131,6 +131,9 @@ def main():
 				amount = int(amount_str.replace("einen", "1").replace("eine", "1").replace("ein", "1"))
 				# print("%s zieht %d %s" % (players_name, amount, card_name))
 
+				if card_name == "Schwarze Katzen":
+					card_name = "Schwarze Katze"
+
 				if card_name in players[players_name].cards:
 						# print("Kartentyp bereits gefunden")
 						players[players_name].cards[card_name] = players[players_name].cards[card_name] + amount
@@ -193,6 +196,9 @@ def main():
 
 				if card_name == "Pferd":
 					card_name = "Pferde"
+
+				if card_name == "Schwarze Katzen":
+					card_name = "Schwarze Katze"
 
 				if card_name in players[players_name].cards:
 					# print("Kartentyp bereits gefunden")
